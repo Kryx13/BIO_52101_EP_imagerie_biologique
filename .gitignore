@@ -1,0 +1,51 @@
+# --- 1. Python & Environnement Virtuel ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.venv/
+
+# --- 2. Jupyter Notebooks ---
+# Indispensable pour éviter les conflits de métadonnées
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# --- 3. Données (TRES IMPORTANT) ---
+# On ne versionne jamais les datasets d'images (trop lourd)
+fitz_images/
+data/
+raw_data/
+processed_data/
+
+# Fichiers compressés
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Si ton CSV est très lourd (>100Mo), décommente la ligne suivante :
+# *.csv
+
+# --- 4. Modèles & Entraînement (PyTorch) ---
+# On ne versionne pas les poids entraînés (c'est lourd et ça change tout le temps)
+*.pth
+*.pt
+*.ckpt
+*.h5
+models/
+saved_models/
+
+# Logs d'entraînement (TensorBoard, WandB)
+runs/
+wandb/
+logs/
+lightning_logs/
+
+# --- 5. IDE & Système ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
